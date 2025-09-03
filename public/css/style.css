@@ -1,0 +1,141 @@
+/* Global */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container{
+    flex:1;
+}
+
+/* Navbar */
+.navbar {
+  height: 5rem; 
+}
+
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #222 !important;
+}
+
+/* Footer */
+.f-info-links a {
+  text-decoration: none;
+  color: #222;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-socials i {
+  font-size: 1.2rem; 
+  margin-right: 1rem;
+}
+
+.f-info {
+  text-align: center;
+  height: 8rem;
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; 
+  align-items: center;          
+}
+
+/* Cards */
+.card {
+  border: none !important;
+  margin-bottom: 2rem;
+  overflow: hidden; 
+}
+
+.card { border: none; overflow: hidden; }
+.card-img-top.listing-img {
+  height: 220px;       
+  width: 100%;
+  object-fit: cover;   
+  display: block;
+}
+
+
+.card-body {
+  padding: 0.75rem 0 !important;
+}
+
+.card-text {
+  font-weight: 400 !important; 
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+/* Card Effect */
+
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.6;
+    background-color: white;
+}
+
+/* New Page */
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Edit Page */
+.edit-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Show Page */
+
+.show-card {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+
+.show-img {
+  width: 100%;              /* span full card width */
+  height: 400px;            /* increase height (try 400–500px) */
+  object-fit: cover;        /* fills area, crops edges slightly */
+  display: block;
+}
+
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;      /* spacing below description */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+

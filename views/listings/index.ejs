@@ -1,0 +1,154 @@
+<%- layout('layouts/boilerplate') -%>
+<style>
+  #filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .filter {
+    text-align: center;
+    margin-right: 1.7rem;
+    margin-top: 2rem;
+    opacity: 0.7;
+  }
+
+  .filter:hover{
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .tax-info{
+    display: none;
+  }
+
+  .tax-toggle{
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 3.25rem;
+    padding: 1rem;
+    margin-left: 3rem;
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: center;
+  }
+</style>
+<div id="filters">
+  <!-- Trending -->
+  <div class="filter">
+    <div><i class="fa-solid fa-fire"></i></div>
+    <p>Trending</p>
+  </div>
+
+  <!-- Beachfront -->
+  <div class="filter">
+    <div><i class="fa-solid fa-umbrella-beach"></i></div>
+    <p>Beachfront</p>
+  </div>
+
+  <!-- City Stay -->
+  <div class="filter">
+    <div><i class="fa-solid fa-city"></i></div>
+    <p>Iconic Cities</p>
+  </div>
+
+  <!-- Mountain View -->
+  <div class="filter">
+    <div><i class="fa-solid fa-mountain"></i></div>
+    <p>Mountain Retreats</p>
+  </div>
+
+  <!-- Pool -->
+  <div class="filter">
+    <div><i class="fa-solid fa-person-swimming"></i></div>
+    <p>Pools</p>
+  </div>
+
+  <!-- Pet Friendly -->
+  <div class="filter">
+    <div><i class="fa-solid fa-dog"></i></div>
+    <p>Pet-Friendly</p>
+  </div>
+
+  <!-- Tiny Homes -->
+  <div class="filter">
+    <div><i class="fa-solid fa-house-chimney"></i></div>
+    <p>Tiny Homes</p>
+  </div>
+
+  <!-- Cabins -->
+  <div class="filter">
+    <div><i class="fa-solid fa-campground"></i></div>
+    <p>Cabins</p>
+  </div>
+
+  <!-- Luxe Villas -->
+  <div class="filter">
+    <div><i class="fa-solid fa-gem"></i></div>
+    <p>Luxe Villas</p>
+  </div>
+
+  <!-- Camping -->
+  <!-- <div class="filter">
+    <div><i class="fa-solid fa-tent"></i></div>
+    <p>Camping</p>
+  </div> -->
+
+  <!-- Lakefront -->
+  <!-- <div class="filter">
+    <div><i class="fa-solid fa-water"></i></div>
+    <p>Lakefront</p>
+  </div> -->
+
+  <div class="tax-toggle">
+    <div class="form-check-reverse form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+      <label class="form-check-label" for="switchCheckDefault">Display total after Taxes</label>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<!-- <h3 class="mb-4">All Listings</h3> -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 mt-3">
+  <% for (const data of datas) { %>
+    <a href="/listings/<%=data.id%>" class="listing-link">
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="<%= data.image.url %>" class="card-img-top listing-img" alt="Listing">
+          <di class="card-img-overlay"></di>
+          <div class="card-body">
+            <h5 class="card-title mb-1"><%= data.title %></h5>
+            <p class="card-text text-muted mb-0 price-text" data-price="<%= data.price %>">
+              &#36;<%= Number(data.price).toLocaleString('en-US') %> / night
+            </p>
+          </div>
+        </div>
+    </div>
+    </a>
+  <% } %>
+</div>
+
+<script>
+  let taxSwitch = document.getElementById("switchCheckDefault");
+
+  taxSwitch.addEventListener("click", () => {
+    let priceElements = document.getElementsByClassName("price-text");
+
+    for (let el of priceElements) {
+      let basePrice = Number(el.getAttribute("data-price"));
+
+      if (taxSwitch.checked) {
+        let finalPrice = basePrice * 1.18;
+        el.innerHTML = 
+          `&#36;${finalPrice.toLocaleString('en-US')} / night 
+           <span class="text-muted">(after 18% GST)</span>`;
+      } else {
+        el.innerHTML = 
+          `&#36;${basePrice.toLocaleString('en-US')} / night`;
+      }
+    }
+  });
+</script>
