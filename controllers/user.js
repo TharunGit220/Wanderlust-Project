@@ -1,5 +1,5 @@
 
-const Usermodel = require("../models/review.js")
+const Usermodel = require("../models/user.js")
 module.exports.signup = (req, res) => {
     res.render("users/signup.ejs"); 
 }
