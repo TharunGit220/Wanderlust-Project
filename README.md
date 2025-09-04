@@ -18,7 +18,7 @@ To enhance usability, I incorporated real-time geolocation with Google Maps API 
 </ul>
 <hr/>
 
-<h2>✨ Highlights That Set This Project Apart</h2>
+<h2>✨ Highlights of this Project </h2>
 
 <ul>
   <li>🔒 <b>Enterprise-Level Authentication</b>: Multi-strategy Passport.js (Google OAuth 2.0 + Local) with serialized sessions stored securely in MongoDB Atlas.</li>
