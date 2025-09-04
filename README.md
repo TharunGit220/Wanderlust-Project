@@ -10,12 +10,11 @@ To enhance usability, I incorporated real-time geolocation with Google Maps API 
 
 
 <hr/>
-<h2>📸 Live Demo & Repo</h2>
+<h2>📸 Live Demo </h2>
 
 <ul>
-  <li>🌐 <b>Live Site</b>: <a href="https://your-live-link-here.com">WanderLust on Render</a></li>
-  <li>💻 <b>GitHub Repository</b>: <a href="https://github.com/your-repo">View Repo</a></li>
-  <li>🎥 <b>Screenshots / Demo GIFs</b>: Add images of listing pages, maps, login, etc.</li>
+  <li>🌐 <b>Live Site</b>: <a href="https://wanderlust-project-8v8k.onrender.com/listings">WanderLust on Render</a></li>
+  <li>💻 <b>GitHub Repository</b>: <a href="https://github.com/TharunGit220/Wanderlust-Project/">View Repo</a></li>
 </ul>
 <hr/>
 
