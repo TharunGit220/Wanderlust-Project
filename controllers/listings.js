@@ -91,3 +91,10 @@ module.exports.editform = async (req, res) => {
     req.flash("success", "Your listing has been edited successfully!");
     res.redirect(`/listings/${id}`);
 };
+
+module.exports.deletelisting = async (req,res)=>{
+    let {id} = req.params
+    console.log(await Listing.findByIdAndDelete(id,{new:true,runValidators:true}))
+    req.flash("success", "Your listing has been deleted successfully!");
+    res.redirect("/listings")
+}
