@@ -18,27 +18,26 @@ To enhance usability, I incorporated real-time geolocation with Google Maps API 
 </ul>
 <hr/>
 
-<h2>✨ Highlights of My Project </h2>
+<h2>✨ Highlights of My Project</h2>
 
-<ul>
-  <li>🔒 <b>Enterprise-Level Authentication</b>: I implemented multi-strategy authentication with Passport.js, supporting both Google OAuth 2.0 and Local strategies. User sessions are serialized and securely stored in MongoDB Atlas, giving users flexible yet secure login options.</li>
+🔒 <b>Enterprise-Level Authentication</b>: I implemented multi-strategy authentication with Passport.js, supporting both Local and Google OAuth 2.0 logins. User sessions are managed with Express-Session, signed and encrypted cookies, and securely persisted in MongoDB Atlas via Connect-Mongo. Combined with Passport-Local-Mongoose and Cookie-Parser, this setup provides flexible, secure, and production-grade authentication flows.  
 
-  <li>🗺️ <b>Geospatial Intelligence</b>: I integrated the Google Maps API and geocoding to dynamically plot property listings with accurate coordinates. This ensures that every listing is tied to a real-world location and provides a more immersive user experience.</li>
-<br>
-  <li>☁️ <b>Cloud-Native Architecture</b>: All images are uploaded and served through Cloudinary with Multer, allowing for scalable storage and optimized delivery (lazy-loading, caching, and automatic resizing). This keeps the app fast while supporting high-quality visuals.</li>
-<br>
-  <li>🧩 <b>Scalable MVC Design</b>: I built WanderLust around a modular MVC architecture, making the codebase clean, maintainable, and ready for future expansion. This design choice reflects how I approach building production-ready systems.</li>
-<br>
-  <li>🗂️ <b>Robust Data Integrity</b>: I used Joi schemas to validate user input before it ever reaches the database, reducing errors and preventing malformed data. This ensures reliability and consistency across all operations.</li>
-<br>
-  <li>⚡ <b>Performance & UX</b>: By hosting the application on Render with MongoDB Atlas, I achieved fast response times and reliable uptime. Combined with Bootstrap and responsive EJS templates, the platform offers a smooth, mobile-friendly user experience.</li>
-<br>
-  <li>📊 <b>Real-World Security Practices</b>: I applied industry-standard techniques such as encrypted sessions, cookie management, CSRF protection, and middleware-based authorization checks. Flash messages provide real-time feedback, improving usability and transparency.</li>
-<br>
-  <li>🎨 <b>User-Centered Design</b>: I focused on building an intuitive, responsive interface with clear navigation and helpful prompts. This makes the platform approachable for both tech-savvy users and casual travelers.</li>
-<br>
-  <li>⭐ <b>Community Features</b>: I added user reviews and ratings so guests can share feedback and hosts can build credibility, making the platform more engaging and trustworthy.</li>
-</ul>
+🗺️ <b>Geospatial Intelligence</b>: I integrated the Google Maps API with geocoding to automatically plot properties on interactive maps. Each listing is tied to real-world coordinates, creating an immersive browsing experience that helps users visualize locations in context.  
+
+☁️ <b>Cloud-Native Architecture</b>: All images are uploaded via Multer and served through Cloudinary, which provides CDN-backed delivery, lazy-loading, caching, and automatic resizing. This ensures a visually rich platform that scales seamlessly without compromising performance.  
+
+🧩 <b>Scalable MVC Design</b>: I structured the codebase around a modular MVC architecture, keeping business logic, routing, and views cleanly separated. This approach improves maintainability, readability, and future scalability as new features are added.  
+
+🗂️ <b>Robust Data Integrity</b>: Using Joi schemas, I validate all incoming requests before they hit the database. This reduces runtime errors, enforces consistent formats, and ensures data reliability across authentication, listings, and reviews.  
+
+⚡ <b>Performance & UX</b>: Hosting the app on Render with MongoDB Atlas delivers fast response times and reliable uptime. Paired with responsive EJS templates and Bootstrap, the application adapts to any screen size, offering a smooth experience for desktop and mobile users alike.  
+
+📊 <b>Real-World Security Practices</b>: I enforced encrypted sessions, cookie-based state management, middleware-driven authorization, and CSRF protection. Flash messages provide instant feedback, making the app transparent and secure while enhancing usability.  
+
+🎨 <b>User-Centered Design</b>: I designed the interface with simplicity and clarity in mind — clean layouts, intuitive navigation, and helpful prompts ensure accessibility for all users, from tech-savvy hosts to casual travelers.  
+
+⭐ <b>Community Features</b>: I added reviews and ratings so users can share experiences and hosts can build trust. This transforms the platform into a more engaging and community-driven environment.  
+
 
 
 <hr/>
