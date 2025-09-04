@@ -45,17 +45,35 @@ To enhance usability, I incorporated real-time geolocation with Google Maps API 
 
 <h2>🛠️ Tech Stack</h2>
 
+<h3>Front-End 🌐</h3>
 <ul>
-  <li><b>Frontend</b>: HTML, CSS, JavaScript, Bootstrap, EJS (with EJS-Mate layouts)</li>
-  <li><b>Backend</b>: Node.js, Express.js (REST API with modular routing)</li>
-  <li><b>Database</b>: MongoDB Atlas + Mongoose ODM</li>
-  <li><b>Authentication</b>: Passport.js (Google OAuth 2.0 + Local Strategy)</li>
-  <li><b>Cloud Services</b>: Cloudinary (image hosting), Multer (file uploads)</li>
-  <li><b>Security & Utilities</b>: Joi validation, Express-Session, Connect-Mongo, Dotenv, Cookie-Parser, Method-Override</li>
-  <li><b>Hosting</b>: Render (app), MongoDB Atlas (database)</li>
+  <li><b>Technologies:</b> HTML, CSS, JavaScript, Bootstrap, EJS with EJS-Mate for layouts</li>
+  <li><b>Responsive Design:</b> Fully mobile-friendly layouts, optimized for multiple screen sizes</li>
+  <li><b>User Interface:</b> Clean navigation and intuitive forms for browsing, creating, and managing listings</li>
+  <li><b>Maps Integration:</b> Google Maps API with geocoding to plot property locations dynamically</li>
 </ul>
 
-<hr/>
+<h3>Back-End 🛠️</h3>
+<ul>
+  <li><b>Technologies:</b> Node.js, Express.js</li>
+  <li><b>RESTful API:</b> Organized routes for handling listings, reviews, authentication, and sessions</li>
+  <li><b>Authentication:</b> Multi-strategy Passport.js (Local + Google OAuth 2.0) with secure sessions</li>
+  <li><b>Validation:</b> Joi schemas to ensure all incoming data is clean and secure</li>
+</ul>
+
+<h3>Database 🗄️</h3>
+<ul>
+  <li><b>Database:</b> MongoDB Atlas with Mongoose ODM</li>
+  <li><b>Schema Design:</b> Structured models for users, listings, and reviews</li>
+  <li><b>Queries:</b> Efficient querying and population for related data (e.g., listings with owners & reviews)</li>
+</ul>
+
+<h3>Cloud & Storage ☁️</h3>
+<ul>
+  <li><b>Image Hosting:</b> Cloudinary with Multer for uploads, ensuring reliable storage and optimized delivery</li>
+  <li><b>Deployment:</b> Application hosted on Render, database managed on MongoDB Atlas</li>
+</ul>
+
 
 <h2>🔍 Why This Project Stands Out for Employers</h2>
 
