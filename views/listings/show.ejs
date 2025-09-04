@@ -43,25 +43,34 @@
                 class="needs-validation"
                 novalidate>
             
-            <div class="mb-3">
+            <div class="mb-3"> 
               <label for="rating" class="form-label mb-2">Rating</label>
-              <fieldset class="starability-slot">
-                <input type="radio" id="rate5" name="review[rating]" value="1" />
-                <label for="rate5" title="Amazing">5 stars</label>
+              <fieldset class="starability-slot" id="rating-fieldset">
+                <!-- 1 Star -->
+                <input type="radio" id="rate1" name="review[rating]" value="1" required />
+                <label for="rate1" title="Terrible">1 star</label>
 
-                <input type="radio" id="rate4" name="review[rating]" value="2" />
-                <label for="rate4" title="Very good">4 stars</label>
+                <!-- 2 Stars -->
+                <input type="radio" id="rate2" name="review[rating]" value="2" />
+                <label for="rate2" title="Not good">2 stars</label>
 
+                <!-- 3 Stars -->
                 <input type="radio" id="rate3" name="review[rating]" value="3" />
                 <label for="rate3" title="Average">3 stars</label>
 
-                <input type="radio" id="rate2" name="review[rating]" value="3" />
-                <label for="rate2" title="Not good">2 stars</label>
+                <!-- 4 Stars -->
+                <input type="radio" id="rate4" name="review[rating]" value="4" />
+                <label for="rate4" title="Very good">4 stars</label>
 
-                <input type="radio" id="rate1" name="review[rating]" value="5" />
-                <label for="rate1" title="Terrible">1 star</label>
+                <!-- 5 Stars -->
+                <input type="radio" id="rate5" name="review[rating]" value="5" />
+                <label for="rate5" title="Amazing">5 stars</label>
               </fieldset>
+              <div class="invalid-feedback" id="ratingError" style="display:none">
+                You need to pick a star
+              </div>
             </div>
+
 
             <div class="mb-3">
               <label for="comment" class="form-label mb-1">Comments</label>
@@ -130,3 +139,22 @@
 <script src="/javascripts/map.js"></script>
 
 
+<script>
+  document.querySelector("form.needs-validation").addEventListener("submit", function(e) {
+  const stars = document.querySelectorAll('input[name="review[rating]"]');
+  const error = document.getElementById("ratingError");
+  let checked = false;
+
+  stars.forEach(star => {
+    if (star.checked) checked = true;
+  });
+
+  if (!checked) {
+    e.preventDefault(); // stop form submission
+    error.style.display = "block";
+  } else {
+    error.style.display = "none"; // hide if fixed
+  }
+});
+
+</script>
