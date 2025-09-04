@@ -2,21 +2,21 @@
 
 <p>
 I built WanderLust as a full stack web application that allows users to discover, share, and manage vacation rentals in a way that feels modern, secure, and reliable. My goal was to create a platform that balances scalability, security, and user experience, ensuring consistent performance as the application grows.
+</p>
 
+<p>
 From an architectural standpoint, I structured the project using the MVC pattern and enforced data integrity with Joi validation schemas to prevent malformed inputs. For authentication, I implemented multi-strategy Passport.js, supporting both Local and Google OAuth logins to give users secure and flexible access. The application is deployed on Render, backed by MongoDB Atlas for cloud database management, and integrates Cloudinary for scalable, optimized image hosting and delivery.
+</p>
 
+<p>
 To enhance usability, I incorporated real-time geolocation with Google Maps API and geocoding, allowing listings to be displayed with precise coordinates. Combined with an intuitive interface, these features make WanderLust not just technically robust but also user-centered — a project that demonstrates both engineering depth and thoughtful design.
 </p>
 
-
-<hr/>
 <h2>📸 Live Demo </h2>
-
 <ul>
   <li>🌐 <b>Live Site</b>: <a href="https://wanderlust-project-8v8k.onrender.com/listings">WanderLust on Render</a></li>
   <li>💻 <b>GitHub Repository</b>: <a href="https://github.com/TharunGit220/Wanderlust-Project/">View Repo</a></li>
 </ul>
-<hr/>
 
 <h2>✨ Highlights of My Project</h2>
 
@@ -37,10 +37,6 @@ To enhance usability, I incorporated real-time geolocation with Google Maps API 
 🎨 <b>User-Centered Design</b>: I designed the interface with simplicity and clarity in mind — clean layouts, intuitive navigation, and helpful prompts ensure accessibility for all users, from tech-savvy hosts to casual travelers.  
 
 ⭐ <b>Community Features</b>: I added reviews and ratings so users can share experiences and hosts can build trust. This transforms the platform into a more engaging and community-driven environment.  
-
-
-
-<hr/>
 
 <h2>🛠️ Tech Stack</h2>
 
@@ -73,28 +69,17 @@ To enhance usability, I incorporated real-time geolocation with Google Maps API 
   <li><b>Deployment:</b> Application hosted on Render, database managed on MongoDB Atlas</li>
 </ul>
 
-
 <h2>🌟 Additional Features</h2>
-
 <ul>
   <li>⭐ <b>User Reviews & Ratings</b>: Integrated a review system where users can leave feedback and ratings, connected to listing models via <code>Mongoose</code> population.</li>
-  
   <li>🔐 <b>Secure Authentication & Sessions</b>: Implemented multi-strategy <code>Passport.js</code> (Local & Google OAuth 2.0) with persistent sessions using <code>express-session</code> and <code>connect-mongo</code>. Password management handled with <code>passport-local-mongoose</code>.</li>
-  
   <li>🗺️ <b>Geolocation & Mapping</b>: Integrated Google Maps API with geocoding for accurate property mapping and location-based features.</li>
-  
   <li>📊 <b>Robust Validation</b>: Enforced client- and server-side validation with <code>Joi</code>, preventing malformed or insecure data from entering the system.</li>
-  
   <li>🎨 <b>Dynamic Templating</b>: Used <code>EJS</code> with <code>ejs-mate</code> layouts for modular, reusable, and scalable views.</li>
-  
   <li>🍪 <b>Cookie & Flash Messaging</b>: Improved UX with <code>cookie-parser</code> and <code>connect-flash</code> to deliver secure cookies, notifications, and error/success messages.</li>
-  
   <li>💾 <b>File Uploads & Cloud Hosting</b>: Managed file uploads with <code>multer</code> and <code>@fluidjs/multer-cloudinary</code>, storing images in <code>Cloudinary</code> for optimized, CDN-backed delivery.</li>
-  
   <li>🛡️ <b>Security Enhancements</b>: Used <code>dotenv</code> for environment management, encrypted sessions, cookie signing, and middleware-driven authorization.</li>
-  
   <li>🏗️ <b>MVC Architecture</b>: Structured using a modular MVC pattern, ensuring maintainability, scalability, and clear separation of concerns.</li>
-  
   <li>⚡ <b>Production-Ready Middleware</b>: Integrated <code>method-override</code> for HTTP verbs support, <code>axios</code> for server-side API requests, and <code>body-parser</code> for efficient request handling.</li>
 </ul>
 
@@ -140,7 +125,3 @@ To enhance usability, I incorporated real-time geolocation with Google Maps API 
   <li><b>Axios</b> – For server-side API calls and integration with third-party services.</li>
   <li><b>Body-Parser</b> – Parses incoming request bodies efficiently (integrated via Express 5).</li>
 </ul>
-
-
-
-
