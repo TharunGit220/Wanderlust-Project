@@ -99,6 +99,48 @@ To enhance usability, I incorporated real-time geolocation with Google Maps API 
   <li>⚡ <b>Production-Ready Middleware</b>: Integrated <code>method-override</code> for HTTP verbs support, <code>axios</code> for server-side API requests, and <code>body-parser</code> for efficient request handling.</li>
 </ul>
 
+<h2>🛠️ Technologies & Packages Used</h2>
+
+<h3>⚙️ Core Stack</h3>
+<ul>
+  <li><b>Node.js</b> – Backend runtime powering the server.</li>
+  <li><b>Express.js</b> – Fast, minimalist framework for building RESTful APIs and middleware-driven routes.</li>
+  <li><b>MongoDB Atlas</b> – Cloud-hosted NoSQL database for storing users, sessions, and listings.</li>
+  <li><b>Mongoose</b> – ODM used for schema definitions, model relationships, and database queries.</li>
+</ul>
+
+<h3>🔐 Authentication & Security</h3>
+<ul>
+  <li><b>Passport.js</b> – Multi-strategy authentication (Local + Google OAuth 2.0).</li>
+  <li><b>Passport-Local & Passport-Local-Mongoose</b> – Simplifies username/password storage and session handling.</li>
+  <li><b>Connect-Mongo</b> – Stores session data securely inside MongoDB Atlas.</li>
+  <li><b>Express-Session</b> – Session middleware with encrypted, signed cookies.</li>
+  <li><b>Cookie-Parser</b> – Parses and secures cookies for authentication flows.</li>
+  <li><b>Dotenv</b> – Manages environment variables securely across dev/production.</li>
+  <li><b>Joi</b> – Robust schema validation to enforce request integrity and prevent malformed data.</li>
+</ul>
+
+<h3>📦 File Uploads & Cloud</h3>
+<ul>
+  <li><b>Multer</b> – Middleware for handling file uploads.</li>
+  <li><b>@fluidjs/multer-cloudinary</b> – Direct integration between Multer and Cloudinary for scalable hosting.</li>
+  <li><b>Cloudinary</b> – CDN-backed image storage, optimization, and delivery.</li>
+</ul>
+
+<h3>🎨 Frontend & Templating</h3>
+<ul>
+  <li><b>EJS</b> – Server-side templating engine for dynamic content rendering.</li>
+  <li><b>EJS-Mate</b> – Layout & partial support for modular, DRY templating.</li>
+  <li><b>Bootstrap</b> – Responsive UI components (styling & layout).</li>
+</ul>
+
+<h3>📡 Utilities & Middleware</h3>
+<ul>
+  <li><b>Method-Override</b> – Enables PUT/DELETE support in forms for RESTful compliance.</li>
+  <li><b>Connect-Flash</b> – Flash messaging system for user feedback (success, error, info).</li>
+  <li><b>Axios</b> – For server-side API calls and integration with third-party services.</li>
+  <li><b>Body-Parser</b> – Parses incoming request bodies efficiently (integrated via Express 5).</li>
+</ul>
 
 
 
