@@ -1,51 +1,58 @@
-🌍 WanderLust – Full Stack Booking Platform
+<h1>🌍 WanderLust – Full Stack Booking Platform</h1>
 
+<p>
 WanderLust is a production-grade full stack web application that empowers users to discover, list, and manage vacation rentals with modern features like real-time geolocation, secure authentication, and cloud-hosted image storage.
+</p>
 
-The platform was designed with scalability, security, and user experience in mind — reflecting the same principles used in professional SaaS products. From seamless Google OAuth logins to dynamic property maps, WanderLust delivers an experience that mirrors real-world booking platforms.
+<p>
+The platform was designed with <b>scalability, security, and user experience</b> in mind — reflecting the same principles used in professional SaaS products. From seamless Google OAuth logins to dynamic property maps, WanderLust delivers an experience that mirrors real-world booking platforms.
+</p>
 
-✨ Highlights That Set This Project Apart
+<hr/>
 
-🔒 Enterprise-Level Authentication: Implemented multi-strategy Passport.js authentication (Google OAuth 2.0 + Local) with serialized sessions stored securely in MongoDB Atlas.
+<h2>✨ Highlights That Set This Project Apart</h2>
 
-🗺️ Geospatial Intelligence: Integrated Google Maps API & geocoding to automatically plot property listings on maps with accurate coordinates.
+<ul>
+  <li>🔒 <b>Enterprise-Level Authentication</b>: Multi-strategy Passport.js (Google OAuth 2.0 + Local) with serialized sessions stored securely in MongoDB Atlas.</li>
+  <li>🗺️ <b>Geospatial Intelligence</b>: Integrated Google Maps API & geocoding to automatically plot property listings on maps with accurate coordinates.</li>
+  <li>☁️ <b>Cloud-Native Architecture</b>: Leveraged Cloudinary + Multer for scalable image hosting and optimized delivery (lazy-loading, caching).</li>
+  <li>🧩 <b>Scalable MVC Design</b>: Fully modular MVC architecture, ensuring maintainability and future feature expansion.</li>
+  <li>🗂️ <b>Robust Data Integrity</b>: Applied Joi schemas for request validation, eliminating malformed data before it reaches the database.</li>
+  <li>⚡ <b>Performance & UX</b>: Hosted on Render with MongoDB Atlas, delivering fast response times, reliable uptime, and smooth user flows.</li>
+  <li>📊 <b>Real-World Security Practices</b>: Encrypted sessions, cookie management, flash messages for user feedback, and middleware-driven authorization.</li>
+</ul>
 
-☁️ Cloud-Native Architecture: Leveraged Cloudinary + Multer for scalable image hosting and optimized delivery (lazy-loading, caching).
+<hr/>
 
-🧩 Scalable MVC Design: Fully modular MVC architecture, ensuring maintainability and future feature expansion.
+<h2>🛠️ Tech Stack</h2>
 
-🗂️ Robust Data Integrity: Applied Joi schemas for request validation, eliminating malformed data before it reaches the database.
+<ul>
+  <li><b>Frontend</b>: HTML, CSS, JavaScript, Bootstrap, EJS (with EJS-Mate layouts)</li>
+  <li><b>Backend</b>: Node.js, Express.js (REST API with modular routing)</li>
+  <li><b>Database</b>: MongoDB Atlas + Mongoose ODM</li>
+  <li><b>Authentication</b>: Passport.js (Google OAuth 2.0 + Local Strategy)</li>
+  <li><b>Cloud Services</b>: Cloudinary (image hosting), Multer (file uploads)</li>
+  <li><b>Security & Utilities</b>: Joi validation, Express-Session, Connect-Mongo, Dotenv, Cookie-Parser, Method-Override</li>
+  <li><b>Hosting</b>: Render (app), MongoDB Atlas (database)</li>
+</ul>
 
-⚡ Performance & UX: Hosted on Render with MongoDB Atlas, delivering fast response times, reliable uptime, and smooth user flows.
+<hr/>
 
-📊 Real-World Security Practices: Used encrypted sessions, cookie management, flash messages for user feedback, and middleware-driven authorization.
+<h2>🔍 Why This Project Stands Out for Employers</h2>
 
-🛠️ Tech Stack
+<ul>
+  <li>✅ <b>Scalable</b>: Modularized with MVC architecture and REST APIs.</li>
+  <li>✅ <b>Secure</b>: Robust validation and multi-strategy authentication.</li>
+  <li>✅ <b>Cloud-Ready</b>: Uses cloud services (MongoDB Atlas, Cloudinary, Render) to mirror professional deployment pipelines.</li>
+  <li>✅ <b>User-Centered</b>: Smooth UX with responsive design, flash messages, and real-time maps.</li>
+</ul>
 
-Frontend: HTML, CSS, JavaScript, Bootstrap, EJS (with EJS-Mate layouts)
-Backend: Node.js, Express.js (REST API with modular routing)
-Database: MongoDB Atlas + Mongoose ODM
-Authentication: Passport.js (Google OAuth 2.0 + Local Strategy)
-Cloud Services: Cloudinary (image hosting), Multer (file uploads)
-Security & Utilities: Joi validation, Express-Session, Connect-Mongo, Dotenv, Cookie-Parser, Method-Override
-Hosting: Render (app), MongoDB Atlas (database)
+<hr/>
 
-🔍 Why This Project Stands Out for Employers
+<h2>📸 Live Demo & Repo</h2>
 
-This isn’t just a “classroom” app — it’s designed like a real-world SaaS platform:
-
-Scalable: Modularized with MVC architecture and REST APIs.
-
-Secure: Robust validation and multi-strategy authentication.
-
-Cloud-Ready: Uses cloud services (MongoDB Atlas, Cloudinary, Render) to mirror professional deployment pipelines.
-
-User-Centered: Smooth UX with responsive design, flash messages, and real-time maps.
-
-📸 Live Demo & Repo
-
-🌐 Live Site: WanderLust on Render
-
-💻 GitHub Repository: [Insert your repo link here]
-
-🎥 Screenshots / Demo GIFs: [Add images of listing pages, maps, login, etc.]
+<ul>
+  <li>🌐 <b>Live Site</b>: <a href="https://your-live-link-here.com">WanderLust on Render</a></li>
+  <li>💻 <b>GitHub Repository</b>: <a href="https://github.com/your-repo">View Repo</a></li>
+  <li>🎥 <b>Screenshots / Demo GIFs</b>: Add images of listing pages, maps, login, etc.</li>
+</ul>
