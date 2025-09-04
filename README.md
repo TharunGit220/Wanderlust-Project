@@ -10,6 +10,14 @@ To enhance usability, I incorporated real-time geolocation with Google Maps API 
 
 
 <hr/>
+<h2>📸 Live Demo & Repo</h2>
+
+<ul>
+  <li>🌐 <b>Live Site</b>: <a href="https://your-live-link-here.com">WanderLust on Render</a></li>
+  <li>💻 <b>GitHub Repository</b>: <a href="https://github.com/your-repo">View Repo</a></li>
+  <li>🎥 <b>Screenshots / Demo GIFs</b>: Add images of listing pages, maps, login, etc.</li>
+</ul>
+<hr/>
 
 <h2>✨ Highlights That Set This Project Apart</h2>
 
@@ -48,12 +56,6 @@ To enhance usability, I incorporated real-time geolocation with Google Maps API 
   <li>✅ <b>User-Centered</b>: Smooth UX with responsive design, flash messages, and real-time maps.</li>
 </ul>
 
-<hr/>
 
-<h2>📸 Live Demo & Repo</h2>
 
-<ul>
-  <li>🌐 <b>Live Site</b>: <a href="https://your-live-link-here.com">WanderLust on Render</a></li>
-  <li>💻 <b>GitHub Repository</b>: <a href="https://github.com/your-repo">View Repo</a></li>
-  <li>🎥 <b>Screenshots / Demo GIFs</b>: Add images of listing pages, maps, login, etc.</li>
-</ul>
+
