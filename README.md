@@ -1,4 +1,4 @@
-<h1>🌍 WanderLust – Full Stack Travel Suite</h1>
+<h1>🌍 WanderLust– Full Stack MERN Application</h1>
 
 <p>
 I built WanderLust as a full stack web application that allows users to discover, share, and manage vacation rentals in a way that feels modern, secure, and reliable. My goal was to create a platform that balances scalability, security, and user experience, ensuring consistent performance as the application grows.
