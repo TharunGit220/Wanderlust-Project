@@ -60,22 +60,34 @@ module.exports.Geteditform = async (req,res)=>{
     res.render("listings/edit.ejs", {data})
 }
 
-module.exports.editform = async(req,res)=>{
-    let {id} = req.params
-    let listing = await Listing.findByIdAndUpdate(id,{...req.body.listing},{new:true,runValidators:true})
-    if(typeof req.file != "undefined"){
-        let url = req.file.path
-        let filename = req.file.filename
-        listing.image = {filename,url}
-        await listing.save()
-    }
-    req.flash("success", "Your listing has been edited successfully!");
-    res.redirect(`/listings/${id}`)
-}
+module.exports.editform = async (req, res) => {
+    let { id } = req.params;
 
-module.exports.deletelisting = async (req,res)=>{
-    let {id} = req.params
-    console.log(await Listing.findByIdAndDelete(id,{new:true,runValidators:true}))
-    req.flash("success", "Your listing has been deleted successfully!");
-    res.redirect("/listings")
-}
+    let listing = await Listing.findByIdAndUpdate(
+        id,
+        { ...req.body.listing },
+        { new: true, runValidators: true }
+    );
+
+    if (req.body.listing.location || req.body.listing.country) {
+        const address = `${req.body.listing.location}, ${req.body.listing.country}`;
+        const geoResponse = await axios.get(
+            `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${API_KEY}`
+        );
+
+        if (geoResponse.data.results.length > 0) {
+            listing.geometry = geoResponse.data.results[0].geometry;
+        }
+    }
+
+    if (typeof req.file !== "undefined") {
+        let url = req.file.path;
+        let filename = req.file.filename;
+        listing.image = { filename, url };
+    }
+
+    await listing.save();
+
+    req.flash("success", "Your listing has been edited successfully!");
+    res.redirect(`/listings/${id}`);
+};
