@@ -1,4 +1,4 @@
-<h1>🌍 WanderLust – Full Stack Booking Platform</h1>
+<h1>🌍 WanderLust – Full Stack Travel Suite</h1>
 
 <p>
 WanderLust is a production-grade full stack web application that empowers users to discover, list, and manage vacation rentals with modern features like real-time geolocation, secure authentication, and cloud-hosted image storage.
