@@ -78,8 +78,6 @@ To enhance usability, I incorporated real-time geolocation with Google Maps API 
 <h2>🌟 Additional Features</h2>
 
 <ul>
-  <li>🔍 <b>Advanced Search & Filters</b>: Users can quickly find listings through flexible search and filtering options, powered by optimized queries in <code>Mongoose</code>.</li>
-  
   <li>⭐ <b>User Reviews & Ratings</b>: Integrated a review system where users can leave feedback and ratings, connected to listing models via <code>Mongoose</code> population.</li>
   
   <li>🔐 <b>Secure Authentication & Sessions</b>: Implemented multi-strategy <code>Passport.js</code> (Local & Google OAuth 2.0) with persistent sessions using <code>express-session</code> and <code>connect-mongo</code>. Password management handled with <code>passport-local-mongoose</code>.</li>
