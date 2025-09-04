@@ -68,19 +68,29 @@ To enhance usability, I incorporated real-time geolocation with Google Maps API 
   <li><b>Image Hosting:</b> Cloudinary with Multer for uploads, ensuring reliable storage and optimized delivery</li>
   <li><b>Deployment:</b> Application hosted on Render, database managed on MongoDB Atlas</li>
 </ul>
-
+<br>
 <h2>🌟 Additional Features</h2>
 <ul>
   <li>⭐ <b>User Reviews & Ratings</b>: Integrated a review system where users can leave feedback and ratings, connected to listing models via <code>Mongoose</code> population.</li>
+  <br>
   <li>🔐 <b>Secure Authentication & Sessions</b>: Implemented multi-strategy <code>Passport.js</code> (Local & Google OAuth 2.0) with persistent sessions using <code>express-session</code> and <code>connect-mongo</code>. Password management handled with <code>passport-local-mongoose</code>.</li>
+  <br>
   <li>🗺️ <b>Geolocation & Mapping</b>: Integrated Google Maps API with geocoding for accurate property mapping and location-based features.</li>
+  <br>
   <li>📊 <b>Robust Validation</b>: Enforced client- and server-side validation with <code>Joi</code>, preventing malformed or insecure data from entering the system.</li>
+  <br>
   <li>🎨 <b>Dynamic Templating</b>: Used <code>EJS</code> with <code>ejs-mate</code> layouts for modular, reusable, and scalable views.</li>
+  <br>
   <li>🍪 <b>Cookie & Flash Messaging</b>: Improved UX with <code>cookie-parser</code> and <code>connect-flash</code> to deliver secure cookies, notifications, and error/success messages.</li>
+  <br>
   <li>💾 <b>File Uploads & Cloud Hosting</b>: Managed file uploads with <code>multer</code> and <code>@fluidjs/multer-cloudinary</code>, storing images in <code>Cloudinary</code> for optimized, CDN-backed delivery.</li>
+  <br>
   <li>🛡️ <b>Security Enhancements</b>: Used <code>dotenv</code> for environment management, encrypted sessions, cookie signing, and middleware-driven authorization.</li>
+  <br>
   <li>🏗️ <b>MVC Architecture</b>: Structured using a modular MVC pattern, ensuring maintainability, scalability, and clear separation of concerns.</li>
+  <br>
   <li>⚡ <b>Production-Ready Middleware</b>: Integrated <code>method-override</code> for HTTP verbs support, <code>axios</code> for server-side API requests, and <code>body-parser</code> for efficient request handling.</li>
+  <br>
 </ul>
 
 <h2>🛠️ Technologies & Packages Used</h2>
