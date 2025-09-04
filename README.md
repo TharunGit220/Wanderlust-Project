@@ -75,14 +75,32 @@ To enhance usability, I incorporated real-time geolocation with Google Maps API 
 </ul>
 
 
-<h2>🔍 Why This Project Stands Out for Employers</h2>
+<h2>🌟 Additional Features</h2>
 
 <ul>
-  <li>✅ <b>Scalable</b>: Modularized with MVC architecture and REST APIs.</li>
-  <li>✅ <b>Secure</b>: Robust validation and multi-strategy authentication.</li>
-  <li>✅ <b>Cloud-Ready</b>: Uses cloud services (MongoDB Atlas, Cloudinary, Render) to mirror professional deployment pipelines.</li>
-  <li>✅ <b>User-Centered</b>: Smooth UX with responsive design, flash messages, and real-time maps.</li>
+  <li>🔍 <b>Advanced Search & Filters</b>: Users can quickly find listings through flexible search and filtering options, powered by optimized queries in <code>Mongoose</code>.</li>
+  
+  <li>⭐ <b>User Reviews & Ratings</b>: Integrated a review system where users can leave feedback and ratings, connected to listing models via <code>Mongoose</code> population.</li>
+  
+  <li>🔐 <b>Secure Authentication & Sessions</b>: Implemented multi-strategy <code>Passport.js</code> (Local & Google OAuth 2.0) with persistent sessions using <code>express-session</code> and <code>connect-mongo</code>. Password management handled with <code>passport-local-mongoose</code>.</li>
+  
+  <li>🗺️ <b>Geolocation & Mapping</b>: Integrated Google Maps API with geocoding for accurate property mapping and location-based features.</li>
+  
+  <li>📊 <b>Robust Validation</b>: Enforced client- and server-side validation with <code>Joi</code>, preventing malformed or insecure data from entering the system.</li>
+  
+  <li>🎨 <b>Dynamic Templating</b>: Used <code>EJS</code> with <code>ejs-mate</code> layouts for modular, reusable, and scalable views.</li>
+  
+  <li>🍪 <b>Cookie & Flash Messaging</b>: Improved UX with <code>cookie-parser</code> and <code>connect-flash</code> to deliver secure cookies, notifications, and error/success messages.</li>
+  
+  <li>💾 <b>File Uploads & Cloud Hosting</b>: Managed file uploads with <code>multer</code> and <code>@fluidjs/multer-cloudinary</code>, storing images in <code>Cloudinary</code> for optimized, CDN-backed delivery.</li>
+  
+  <li>🛡️ <b>Security Enhancements</b>: Used <code>dotenv</code> for environment management, encrypted sessions, cookie signing, and middleware-driven authorization.</li>
+  
+  <li>🏗️ <b>MVC Architecture</b>: Structured using a modular MVC pattern, ensuring maintainability, scalability, and clear separation of concerns.</li>
+  
+  <li>⚡ <b>Production-Ready Middleware</b>: Integrated <code>method-override</code> for HTTP verbs support, <code>axios</code> for server-side API requests, and <code>body-parser</code> for efficient request handling.</li>
 </ul>
+
 
 
 
