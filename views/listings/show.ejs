@@ -93,20 +93,24 @@
 
           <% if (data.review && data.review.length) { %>
             <div class="row row-cols-1 row-cols-md-2 g-3">
-              <% for (const reviews of data.review) { %>
+              <% for (const review of data.review) { %>
                 <div class="col">
                   <div class="card shadow-sm h-100">
                     <div class="card-body">
-                      <h6 class="card-title mb-2">@<%=reviews.author.username%></h6>
+                      <h6 class="card-title mb-2">@<%= review.author.username %></h6>
+                      
                       <div class="review-stars mb-2">
-                        <div class="starability-result" data-rating="<%= reviews.rating %>"></div>
+                        <div class="starability-result" data-rating="<%= review.rating %>"></div>
                       </div>
-                      <p class="card-text mb-2"><%= reviews.comment %></p>
-                      <% if(userstatus && data.review[0].author._id.equals(userstatus._id)){ %>
-                      <form class="mb-3" method="POST" action="/listings/<%=data._id%>/reviews/<%=reviews._id%>?_method=DELETE">
-                        <button class="btn btn-sm btn-dark">Delete</button>
-                      </form>
+                      
+                      <p class="card-text mb-2"><%= review.comment %></p>
+
+                      <% if (review.author._id.equals(userstatus._id)) { %>
+                        <form class="mb-3" method="POST" action="/listings/<%= data._id %>/reviews/<%= review._id %>?_method=DELETE">
+                          <button class="btn btn-sm btn-dark">Delete</button>
+                        </form>
                       <% } %>
+                      
                     </div>
                   </div>
                 </div>
