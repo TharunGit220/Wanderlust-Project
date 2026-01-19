@@ -20,6 +20,7 @@ passport.use(
       callbackURL: process.env.callbackURL,
       clientID: process.env.clientID,
       clientSecret: process.env.clientSecret,
+      proxy: true
     },
     async (accessToken, refreshToken, profile, done) => {
       try {
